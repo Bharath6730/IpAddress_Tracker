@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>IP Address Tracker</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Spartan:wght@200;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+</head>
+<body>
+  <header>
+    <h1>IP Address Tracker</h1>
+    <div class="ipInput">
+      <input type="text"  id="ipInput" placeholder="Search for any IP address or domain">
+      <div class="arrowImg" id="arrow">
+        <img src="images/icon-arrow.svg" alt="Arrow" >
+      </div>
+    </div>
+  </header>
+
+  <div id ="map" class="map"></div>
+
+
+  <div class="info">
+    <div class="infoDiv infoDivFirst">
+      <div class="infoTitle">IP Address</div>
+      <div class="infoContent"><p id="ip">0.0.0.0</p></div>
+    </div>
+    <div class="infoDiv infoDivSep">
+      <div class="infoTitle">Location</div>
+      <div class="infoContent"><p id="location">Loading</p></div>
+    </div>
+    <div class="infoDiv infoDivSep">
+      <div class="infoTitle">Timezone</div>
+      <div class="infoContent"><p id="timezone">UTC Loading</p></div>
+    </div>
+    <div class="infoDiv infoDivSep">
+      <div class="infoTitle">ISP</div>
+      <div class="infoContent"><p id="isp">Loading</p></div>
+    </div>
+  </div>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>  -->
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <script src="index.js"></script>
+</body>
+</html>
